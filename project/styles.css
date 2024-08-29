@@ -1,0 +1,212 @@
+.welcombody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.welcome-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.welcome-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+.welcome-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+.welcome-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.welcome-container a:hover {
+    background-color: #0056b3;
+}
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    background-color: rgb(172, 246, 229);
+}
+
+
+/* Style for header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10ps; /* Added padding from the edges */
+    background-color: #f1f1f1ea;
+    border-bottom: 1px solid #e7e7e7;
+    width: 100%; /* Take up full horizontal space */
+    z-index: 700; /* Ensure header stays on top */
+    position: fixed;
+    
+   
+}
+
+
+/* Style for navigation */
+nav {
+    width: 15%;
+    background-color: #f1f1f1ea;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px; /* Adjust according to the header height */
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 999; /* Ensure navigation stays above main content */
+}
+
+/* Style for main content */
+main {
+    flex: 1; /* Take up remaining vertical space */
+    margin-left: 15%; /* Width of navigation */
+    width: calc(85% - 40px); /* Adjusted width considering the padding and margin */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 100px; /* Space for header and some extra margin */
+}
+
+/* Style for footer */
+footer {
+    padding: 10px 20px;
+    background-color: hsla(180, 0%, 46%, 0.099);
+    text-align: center;
+    width: 100%;
+}
+
+/* Style for navigation links */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.future {
+    background-color: #d1ecf1;
+}
+
+.current {
+    background-color: #d4edda;
+}
+
+.past {
+    background-color: #f8d7da;
+}
+
+.disabled-input {
+    background-color: #f5f5f5;
+}
+
+/* Car Details Styling */
+.car-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.car-photos {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.car-photos img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.car-description {
+    flex: 1; /* Take remaining space */
+    max-width: 60%; /* Adjust as needed */
+}
+
+.car-photos,
+.car-description {
+    margin-bottom: 20px;
+}
+
+.car-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.car-details ul li {
+    margin-bottom: 10px;
+}
+
+.rent-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1d6d2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.rent-button:hover {
+    background-color: #218838;
+}
+
+.logo {
+    width: 70px; /* Set the width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
